@@ -1,0 +1,7 @@
+.menu{
+    list-style: none;
+    /* list-style: square; */
+}
+.menu li:before {
+    content: '🍏 ';
+}
