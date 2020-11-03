@@ -45,7 +45,8 @@ a {
     width: 100px;
     filter: grayscale(1); /*1 = 100*/
     margin: 5px;
-    transition:0.5s;
+    transition:0.3s;
+    cursor: pointer; /*cursor 포인터 모양*/
 }
 .testimonial-pic img.active{
     border-radius: 50%;

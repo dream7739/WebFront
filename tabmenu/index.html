@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>탭 메뉴 콘텐츠</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,13 +15,13 @@
         <h1><span>Practice</span> Tab Menu
         </h1>
         <div class="testimonial-pic">
-            <img class="active" src="images/face-01.jpg" alt="">
-            <img src="images/face-02.jpg" alt="">
-            <img src="images/face-03.jpg" alt="">
-            <img src="images/face-04.jpg" alt="">
+            <img class="active" src="images/face-01.jpg" data-alt="tab1">
+            <img src="images/face-02.jpg" data-alt="tab2">
+            <img src="images/face-03.jpg" data-alt="tab3">
+            <img src="images/face-04.jpg" data-alt="tab4">
         </div>
         <div class="testimonial">
-            <div class="content active">
+            <div class="content active" id="tab1">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, error maiores cum nostrum porro quis
                     dolorum maxime id quisquam modi nisi magni nobis officiis accusantium fuga! Dolorem totam magnam
                     quas dolorum consequatur corporis obcaecati nobis ipsa consectetur quisquam beatae hic fugiat cum
@@ -30,7 +32,7 @@
                 <p>Sally, Web Desginer
                 </p>
             </div>
-            <div class="content">
+            <div class="content" id="tab2">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores molestiae quas, possimus ad sit
                     eum, tempore aut eligendi, et architecto soluta atque. Aspernatur ipsa voluptatem porro libero sequi
                     dolorem, officia aut. Consequuntur delectus autem, neque, perspiciatis expedita exercitationem
@@ -41,7 +43,7 @@
                 <p>Amy, Graphic Designer
                 </p>
             </div>
-            <div class="content">
+            <div class="content" id="tab3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit consequatur quos tempore non cum
                     ab pariatur molestiae maxime excepturi, quisquam recusandae explicabo culpa veritatis eum? Deserunt
                     voluptatem incidunt dolore provident doloribus maxime consectetur nisi suscipit iure, consequatur
@@ -52,7 +54,7 @@
                 <p>Jung Ho, Developer
                 </p>
             </div>
-            <div class="content">
+            <div class="content" id="tab4">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores voluptatum exercitationem
                     architecto minima quaerat officia aut rerum illo odio nulla sed, officiis odit dolor nam in.
                     Adipisci perferendis dolore, fuga laborum vitae id minima modi assumenda dolores magni quibusdam
@@ -62,9 +64,14 @@
                     adipisci.</p>
                 <p>Chris, Printing Desinger</p>
             </div>
-
         </div>
     </div>
+    <script>
+        $('.testimonial-pic img').click(function(){
+            $(this).addClass('active')
+            $(this).siblings().removeClass('active')
+        })
+    </script>
 </body>
 
 </html>
