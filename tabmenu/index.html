@@ -38,8 +38,7 @@
                     dolorem, officia aut. Consequuntur delectus autem, neque, perspiciatis expedita exercitationem
                     reiciendis dolorum nisi accusantium, possimus totam repudiandae error illum voluptatum perferendis
                     necessitatibus eligendi! Harum possimus quo animi deleniti error sint non, odio ratione doloremque
-                    magni nesciunt provident eaque officia magnam voluptate aspernatur quibusdam optio rerum. Ut
-                    nesciunt tenetur veniam qui, ullam sunt?</p>
+                    magni nesciunt provident eaque officia magnam voluptate aspernatur quibusdam optio rerum.</p>
                 <p>Amy, Graphic Designer
                 </p>
             </div>
@@ -70,6 +69,9 @@
         $('.testimonial-pic img').click(function(){
             $(this).addClass('active')
             $(this).siblings().removeClass('active')
+
+            $('.testimonial .content').removeClass('active')
+            $('#' + $(this).attr('data-alt')).addClass('active')
         })
     </script>
 </body>
