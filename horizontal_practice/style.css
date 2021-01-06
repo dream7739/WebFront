@@ -1,0 +1,59 @@
+.parent {
+    border: 5px solid red;
+    width: 600px;
+    /* height: 200px; */
+    text-align: center;
+    overflow: hidden;
+}
+.child {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    display: blcok;
+    /* margin: auto; */
+    /* float: right; */
+}
+
+.parent1{
+    margin-top: 10px;
+    width:600px;
+    border: 1px solid black;
+}
+.top{
+    background-color: orchid;
+    height: 50px ;
+}
+.left{
+    background-color: skyblue;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.right{
+    background-color: coral;
+    width: 400px;
+    height: 100px;
+    float: right;
+}
+.clear{
+    background-color: orchid;
+    height: 50px;
+    clear: both;
+}
+
+section{
+    margin-top: 10px;
+    /* width: 600px; */
+    border: 1px solid black;
+    text-align: center;
+    /* overflow: hidden; */
+}
+section article{
+    background-color: orange;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    /* box-sizing: border-box;
+    float: left; */
+    display: inline-block;
+}
