@@ -1,0 +1,16 @@
+/* 부모요소 position: relative */
+/* 자식요소 position: absolute */
+.parent{
+    background-color: dodgerblue;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+.child{
+    background-color: crimson;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
