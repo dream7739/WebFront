@@ -1,0 +1,33 @@
+.parent {
+    width: 600px;
+    height: 300px;
+    border: 5px solid red;
+    position: relative;
+}
+
+.child1 {
+    width: 150px;
+    height: 100px;
+    background-color:navy;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.child2 {
+    width: 150px;
+    height: 100px;
+    background-color:navy;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.child3 {
+    width: 150px;
+    height: 100px;
+    background-color:navy;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+}
