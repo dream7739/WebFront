@@ -1,0 +1,16 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s; /* transition은 hover 아닌 곳에 넣음*/
+}
+a:hover{
+    /* hover가상클래스 띄어쓰기 있으면 안됨 */
+    color: dodgerblue;
+    text-decoration: underline;
+}
