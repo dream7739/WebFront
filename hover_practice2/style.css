@@ -1,0 +1,15 @@
+a{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    background-color: #000;
+    color:#fff;
+}
